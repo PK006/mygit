@@ -76,13 +76,13 @@ if st.button("ทำนายผล"):
    
    out=Knn_model.predict(x_input)
 
-   if out[0] == 'Setosa':
-    st.image("./pic/setosa.jpg")
-   else if out[0] == 'Versicolor':
+   f out[0] == 'Setosa':
+    st.image("./pic/Setosa.jpg")
+   elif out[0] == 'versicolor':
     st.image("./pic/versicolor.jpg")
-  else:
-    st.image("./pic/verginica.jpg")
-   #st.button("ไม่แสดงข้อมูล")
+   else:
+    st.image("./pic/virginica.jpg")
+
 else:
    st.write("ไม่แสดงข้อมูล")
    
