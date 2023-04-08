@@ -19,7 +19,7 @@ with col1:
 
 with col2:
    st.header("Virginica")
-   st.image("./pic/virginica.jpg")
+   st.image("./pic/verginica.jpg")
 
 with col3:
    st.header("Setosa")
@@ -78,8 +78,10 @@ if st.button("ทำนายผล"):
 
    if out[0] == 'Setosa':
     st.image("./pic/setosa.jpg")
-   else:       
-    st.writ('xxx')    
+   else out[0] == 'Versicolor':
+    st.image("./pic/versicolor.jpg")
+    else out[0] == 'Verginica':
+    st.image("./pic/verginica.jpg")
    #st.button("ไม่แสดงข้อมูล")
 else:
    st.write("ไม่แสดงข้อมูล")
