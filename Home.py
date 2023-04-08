@@ -14,11 +14,11 @@ st.image("./pic/npru.jpg")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-   st.header("Versicolor")
+   st.header("versicolor")
    st.image("./pic/versicolor.jpg")
 
 with col2:
-   st.header("Virginica")
+   st.header("virginica")
    st.image("./pic/verginica.jpg")
 
 with col3:
