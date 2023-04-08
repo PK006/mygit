@@ -86,5 +86,5 @@ if st.button("ทำนายผล"):
 else:
    st.write("ไม่แสดงข้อมูล")
 
-   st.image("./pic/pk006.jpg")
+st.image("./pic/pk006.jpg")
    
