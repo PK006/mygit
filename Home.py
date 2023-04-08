@@ -15,11 +15,11 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
    st.header("Versicolor")
-   st.image("./pic/versicolor.jpg")
+   st.image("https://static.streamlit.io/examples/cat.jpg")
 
 with col2:
    st.header("Virginica")
-   st.image("./pic/verginica.jpg")
+   st.image("./pic/setosa.jpg")
 
 with col3:
    st.header("Setosa")
@@ -76,12 +76,10 @@ if st.button("ทำนายผล"):
    
    out=Knn_model.predict(x_input)
 
-   if out[0] == 'setosa':
+   if out[0] == 'Setosa':
     st.image("./pic/setosa.jpg")
-   else out[0] == 'versicolor':
-    st.image("./pic/versicolor.jpg")
-   else:
-    st.image("./pic/verginica.jpg")
+   else:       
+    st.writ('xxx')    
    #st.button("ไม่แสดงข้อมูล")
 else:
    st.write("ไม่แสดงข้อมูล")
