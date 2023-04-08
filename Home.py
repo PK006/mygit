@@ -80,7 +80,7 @@ if st.button("ทำนายผล"):
     st.image("./pic/setosa.jpg")
    else out[0] == 'Versicolor':
     st.image("./pic/versicolor.jpg")
-    else:
+  else:
     st.image("./pic/verginica.jpg")
    #st.button("ไม่แสดงข้อมูล")
 else:
