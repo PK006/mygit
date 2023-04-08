@@ -8,17 +8,17 @@ import plotly.graph_objects as go
 
 # st.header("PK006")
 st.image("./pic/npru.jpg")
-
+st.image("./pic/pk006.jpg")
 #image_file = "./pic/pk006.jpg"
 #st.image(image_file, width=400,)
 col1, col2, col3 = st.columns(3)
 
 with col1:
-   st.header("versicolor")
+   st.header("Versicolor")
    st.image("./pic/versicolor.jpg")
 
 with col2:
-   st.header("virginica")
+   st.header("Virginica")
    st.image("./pic/verginica.jpg")
 
 with col3:
@@ -78,12 +78,11 @@ if st.button("ทำนายผล"):
 
    if out[0] == 'Setosa':
     st.image("./pic/setosa.jpg")
-   elif out[0] == 'versicolor':
+   else out[0] == 'Versicolor':
     st.image("./pic/versicolor.jpg")
-   else:
-    st.image("./pic/virginica.jpg")
-
+    else:
+    st.image("./pic/verginica.jpg")
+   #st.button("ไม่แสดงข้อมูล")
 else:
    st.write("ไม่แสดงข้อมูล")
    
-st.image("./pic/pk006.jpg")
